@@ -103,12 +103,33 @@
         }*/
 
         //PASSING IN MULTIPLE PARAMETERS
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             int product = Multiply(5, 5);
             Console.WriteLine(product);
         }
         static int Multiply(int a, int b)
+        {
+            return a * b;
+        }*/
+
+        //METHOD OVERLOADING
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Multiply(5, 5));
+            Console.WriteLine(Multiply(5, 5, 2));
+            Console.WriteLine(Multiply(2.5, 2.5, 1.5));
+
+        }
+        static int Multiply(int a, int b)
+        {
+            return a * b;
+        }
+        static int Multiply(int a, int b, int c)
+        {
+            return a * b * c;
+        }
+        static double Multiply(double a, double b, double c)
         {
             return a * b;
         }
