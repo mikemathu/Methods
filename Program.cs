@@ -91,7 +91,7 @@
         }*/
 
         //PASSING STAFF TO A METHOD
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             Count(8);
             Count(10);
@@ -100,6 +100,17 @@
         {
             for (int current = 1; current <= numberToCountTo; current++)
             Console.WriteLine(current);
+        }*/
+
+        //PASSING IN MULTIPLE PARAMETERS
+        static void Main(string[] args)
+        {
+            int product = Multiply(5, 5);
+            Console.WriteLine(product);
+        }
+        static int Multiply(int a, int b)
+        {
+            return a * b;
         }
 
 
