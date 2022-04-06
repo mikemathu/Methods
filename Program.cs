@@ -75,19 +75,31 @@
          }*/
 
         //Void with return at the middle
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
-            DoSomething();  
+            DoSomething();
         }
 
         static void DoSomething()
         {
-            int aNumber = 2;
+            int aNumber = 1;
 
             if (aNumber == 2)
                 return;
                          
             Console.WriteLine("This only gets printed if the 'return' statement wasn't executed.");
+        }*/
+
+        //PASSING STAFF TO A METHOD
+        static void Main(string[] args)
+        {
+            Count(8);
+            Count(10);
+        }
+        static void Count(int numberToCountTo)
+        {
+            for (int current = 1; current <= numberToCountTo; current++)
+            Console.WriteLine(current);
         }
 
 
