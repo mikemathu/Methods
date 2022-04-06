@@ -114,13 +114,13 @@
         }*/
 
         //METHOD OVERLOADING
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             Console.WriteLine(Multiply(5, 5));
             Console.WriteLine(Multiply(5, 5, 2));
             Console.WriteLine(Multiply(2.5, 2.5, 1.5));
-
         }
+        
         static int Multiply(int a, int b)
         {
             return a * b;
@@ -132,6 +132,22 @@
         static double Multiply(double a, double b, double c)
         {
             return a * b;
+        }*/
+
+        //RECURSION
+        static void Main(string[] args)
+        {
+            int factorial = Factorial(4);
+            Console.WriteLine(factorial);
+        }
+
+        static int Factorial(int number)
+        {
+            // We establish our "base case" here. When we get to this point, we're done.
+            if (number == 1)
+                return 1;
+
+            return number * Factorial(number - 1);
         }
 
 
