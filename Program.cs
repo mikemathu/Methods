@@ -54,25 +54,42 @@
         }*/
 
         //RETURNING 'EARLY' I.E NOT NECESSARILY AT THE END OF THE METHOD
+        /* static void Main(string[] args)
+         {
+             Console.WriteLine(CalculatePlayerScore());
+         }
+
+         static int CalculatePlayerScore()
+         {
+             int livesLeft = 3;
+             int underlingDesroyed = 17;
+             int minionsDestroyed = 4;
+             int bossesDestroyed = 1;
+
+             //If the player is out of lives, they lose all of their points
+             if(livesLeft == 0)
+                 return 0;
+
+             //Otherwise, the player get 10 points per underling destroyed, 100 points per minion, and 1000 points per boss
+             return underlingDesroyed*10 + minionsDestroyed*100 + bossesDestroyed*1000;
+         }*/
+
+        //Void with return at the middle
         static void Main(string[] args)
         {
-            Console.WriteLine(CalculatePlayerScore());
+            DoSomething();  
         }
 
-        static int CalculatePlayerScore()
+        static void DoSomething()
         {
-            int livesLeft = 3;
-            int underlingDesroyed = 17;
-            int minionsDestroyed = 4;
-            int bossesDestroyed = 1;
+            int aNumber = 2;
 
-            //If the player is out of lives, they lose all of their points
-            if(livesLeft == 0)
-                return 0;
-
-            //Otherwise, the player get 10 points per underling destroyed, 100 points per minion, and 1000 points per boss
-            return underlingDesroyed*10 + minionsDestroyed*100 + bossesDestroyed*1000;
+            if (aNumber == 2)
+                return;
+                         
+            Console.WriteLine("This only gets printed if the 'return' statement wasn't executed.");
         }
+
 
 
 
